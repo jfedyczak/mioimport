@@ -12,7 +12,7 @@ const dateISO = (date) => {
 	let y = `${date.getFullYear()}`
 	while (y.length < 4) y = `0${y}`
 	let m = `${date.getMonth() + 1}`
-	while (y.length < 2) m = `0${y}`
+	while (m.length < 2) m = `0${m}`
 	let d = `${date.getDate()}`
 	while (d.length < 2) d = `0${d}`
 	return `${y}-${m}-${d}`
